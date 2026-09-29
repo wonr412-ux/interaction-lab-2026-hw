@@ -1,0 +1,70 @@
+body{
+	font-family
+	margin:0;
+	position:relative;
+}
+@font-face{
+	font-family:heading-font;
+	src: url(ABCMaxiRoundTrial-Light.otf)
+}
+@font-face{
+	font-family:text-font;
+	src: url(ABCSolarTrial-Regular.otf)
+}
+h2 {
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weight:100;
+	font-size:90px;
+	margin-left:50px;
+	position:relative;
+	top:100px;
+	color:#9E868B;
+	z-index:-1;
+}
+.title{
+	width:400px;
+	position:relative;
+	margin-top:17rem;
+	left:10rem;
+}
+.step1{
+	display:inline-block;
+	transition:transform .3s ease;
+	transform-origin:center;
+}
+.step1:hover{
+	transform:scale(1.05);
+}
+p {
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	left:70rem;
+	right:10rem;
+	color:#9E868B;
+	width: 193px;
+	height: 190px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	background: #C1FF45;
+	z-index:-1;
+}
+h1{
+	font-family:ABCSolarTrial-Regular;
+	font-weight:100;
+	text-align: right;
+	margin-right:50px;
+	color:#C1FF45;
+}
+.header{
+	background-color:#9E868B;
+	top: 0;
+ 	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	overflow: auto;
+  	height:81.88px;
+  	position:fixed;
+}

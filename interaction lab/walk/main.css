@@ -1,0 +1,156 @@
+
+body{
+	font-family: sans-serif;
+	text-align: justify-all;
+	background-color: thistle;
+}
+h1{
+	font-weight:100;
+	color:lightcyan;
+	font-size:25px;
+	margin-left: 90px;
+	margin-top:70px;
+}
+h2{
+	font-weight:50;
+}
+video{
+	width:600px;
+	height:auto;
+	border-radius:30px;
+	border: 20px solid #FAFAD2;
+}
+h3{
+	color:lavender;
+	font-weight:500;
+	margin-left: 50px;
+	margin-top: 50px;
+	word-spacing: 1250px;
+}
+.pic{
+	display: flex;
+	justify-content: flex-end;
+	margin-right:160px;
+	margin-top:120px;
+}
+.next{
+	margin-top: 170px;
+	margin-bottom:90px;
+	margin-right: 90px;
+	text-align:right;
+}
+a{
+	color:lightcyan;
+	text-decoration:none;
+}
+a:hover{
+	color:lightcoral;
+	text-decoration:underline;
+}
+p{
+	color:lightcoral;
+	font-weight:50;
+	letter-spacing: -3px;
+}
+.frame{
+	border: 10px solid #FAFAD2;
+	border-radius:30px;
+	padding: 10px;
+	display: inline-block;
+}
+.text,.text2,.text3,.text4,.me,.mee,.final{
+	font-size:50px;
+	margin-left:200px;
+	margin-right:200px;
+	margin-top:200px;
+	border:50px;
+	margin-bottom:200px;
+}
+h4{
+	font-size: 25px;
+	letter-spacing: 1px;
+	color:lightcoral;
+	margin-left:200px;
+}
+.text2{
+	text-align: justify-all;
+	margin-right:200px;
+	margin-top:200px;
+}
+.text3{
+	text-align:left;
+	margin-right:200px;
+}
+.miffy{
+	width:500px;
+	height:auto;
+}
+.hellokitty{
+	width:500px;
+	height:auto;
+}
+.pic{
+	display:flex;
+	justify-content: center;
+	gap:200px;
+	margin-left:160px;
+	margin-bottom:200px;
+}
+.greeny:hover{
+	color:springgreen;
+}
+.water:hover{
+	color:royalblue;
+}
+.miffy{
+	color:cornsilk;
+	animation: instant-blink .75s steps(1, start) infinite;
+}
+@keyframes instant-blink {
+  50% {
+    color: lightcoral; 
+  }
+}
+.kitty{ 
+	color:fuchsia;
+	animation: instant-blink 1s steps(1, start) infinite;
+}
+@keyframes instant-blink {
+	50% {
+		color:lightcoral;
+	}
+}
+@keyframes gradient{
+	0% {color:lightcyan;}
+	25% {color:aquamarine;}
+	50% {color:paleturquoise;}
+	75% {color:lightyellow;}
+	100% {color:lightcyan}
+}
+.seaglass{
+	animation:gradient;
+	animation-duration:5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	font-weight: 500;
+	font-size: 60px;
+	letter-spacing: 2px;
+}
+.picc{
+	display:flex;
+	gap:200px;
+	margin-left:150px;
+	margin-bottom:200px;
+}
+.Miffy,.Hellokitty,.one,.two{
+	border-radius:30px;
+}
+@keyframes move{
+	0% {transform:translateY(-10px);
+	}
+	100% {transform: translateY(10px);
+	}
+}
+.tiff{
+	animation:move .5s alternate infinite;
+}
