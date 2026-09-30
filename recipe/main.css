@@ -43,6 +43,8 @@ p {
 	left:70rem;
 	right:10rem;
 	color:#9E868B;
+	display:inline-block;
+	display: flex;
 	width: 193px;
 	height: 190px;
 	justify-content: center;
