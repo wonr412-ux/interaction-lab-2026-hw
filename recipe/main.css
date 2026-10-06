@@ -2,6 +2,7 @@ body{
 	font-family
 	margin:0;
 	position:relative;
+	background-color: lavenderblush;
 }
 @font-face{
 	font-family:heading-font;
@@ -13,55 +14,150 @@ body{
 }
 h2 {
 	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
-	font-weight:100;
-	font-size:90px;
+	text-transform:uppercase;
+	font-size:200px;
 	margin-left:50px;
 	position:relative;
 	top:100px;
-	color:#9E868B;
-	z-index:-1;
+	color:#7C3637;
+	letter-spacing: -5px;
+}
+@keyframes righttoleft{
+	from{
+		transform: translateX(-100%);
+	}
+	to{
+		transform: translateX(40%);
+	}
 }
 .title{
-	width:400px;
+	width:800px;
 	position:relative;
-	margin-top:17rem;
-	left:10rem;
+	margin-top:10rem;
+	margin-left:10rem;
 }
 .step1{
-	display:inline-block;
-	transition:transform .3s ease;
-	transform-origin:center;
-}
-.step1:hover{
-	transform:scale(1.05);
-}
-p {
 	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
 	font-weigth:100;
 	font-size:50px;
 	position:relative;
-	left:70rem;
-	right:10rem;
-	color:#9E868B;
-	display:inline-block;
+	left:20rem;
+	display:inline-flex;
+
+}
+.step2{
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	left:10rem;
+	display:inline-flex;
+}
+.step3{
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	left:45rem;
+	display:inline-flex;
+}
+.step4{
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	left:50rem;
+	display:inline-flex;
+}
+.step5{
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	margin-left:20rem;
+	display:inline-flex;
+}
+.step6{
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	margin-left:40rem;
+	display:inline-flex;
+}
+.step7{
+	font-family:ABCMaxiRoundTrial-Light, monospace, sans-serif;
+	font-weigth:100;
+	font-size:50px;
+	position:relative;
+	margin-left:55rem;
+	margin-bottom:10rem;
+	display:inline-flex;
+}
+.example{
+	position:relative;
+	left:20rem;
+	display:inline-flex;
+}
+.example2{
+	position:relative;
+	left:40rem;
+	margin-bottom:10rem;
+	display:inline-flex;
+}
+summary{
+	font-family:ABCMaxiRoundTrial-Light;
+	font-weigth:100;
+	font-size:50px;
 	display: flex;
 	width: 193px;
 	height: 190px;
-	justify-content: center;
-	align-items: center;
 	border-radius: 100px;
 	background: #C1FF45;
-	z-index:-1;
+	justify-content: center;
+	align-items: center;
+	color:#7C3637;
+	list-style: none;
+	text-align: center;
+	transition:transform .3s ease;
+}
+summary:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+	color:#C1FF45;
+	background-color:#7C3637 ;
+	  filter: drop-shadow(10px 10px 5px #C1FF45);
+}
+details::details-content {
+  background-color: #7C3637;
+  border-radius: 150px;
+  color:#C1FF45;
+  text-align: center;
+}
+details{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+details[open] {
+  align-items: flex-start;
+}
+p{
+	font-family: ABCSolarTrial-Regular;
+	font-size:30px;
+	font-weight: 100;
+	padding:25px;
 }
 h1{
 	font-family:ABCSolarTrial-Regular;
-	font-weight:100;
 	text-align: right;
 	margin-right:50px;
 	color:#C1FF45;
+	font-weight: 100;
+	 animation: righttoleft 20s infinite linear running;
 }
 .header{
-	background-color:#9E868B;
+	background-color:#7C3637;
 	top: 0;
  	left: 0;
   	bottom: 0;
@@ -69,4 +165,29 @@ h1{
   	overflow: auto;
   	height:81.88px;
   	position:fixed;
+  	z-index:1;
+
+}
+img{
+	z-index:2;
+	border-radius:100px;
+}
+.step1, .step2, .step3, .step4, .step5, .step6, .step7, .example, .example2{
+  animation: fade-in linear both;
+  animation-timeline: view();
+  animation-range: entry 50%  entry 100%;
+  filter: drop-shadow(10px 10px 5px yellowgreen);
+  padding:30px;
+  margin-right:50px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
