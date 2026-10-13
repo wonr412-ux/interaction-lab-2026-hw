@@ -12,7 +12,7 @@ body{
 	background-color:yellowgreen;
 	transform: scale(1);
 	transition-property: background-color, transform, filter;
-	transition-duration: 4s;
+	transition-duration: 5s;
 	transition-timing-function: ease-in-out;
 	filter:blur(25px);
 }
