@@ -37,3 +37,23 @@ body{
 .1, .2, .3, .4, .5, .6, .7, .8, .9, .10, .11, .12, .13, .14, .15{
 	position:fixed;
 }
+
+.square1{
+	width:100px;
+	height:100px;
+	background-color:yellowgreen;
+	transform: scale(1);
+	transition-property: background-color, transform, filter;
+	transition-duration: 5s;
+	transition-timing-function: ease-in-out;
+	filter:blur(25px);
+}
+.square1:hover{
+	transform:rotate(45deg) scale(.25);
+	border-radius:100%;
+	background-color:aquamarine;
+	filter:blur(75px);
+	transition-property: background-color, border-radius, transform, filter, translateX, rotate;
+	transition-duration: .1s;
+	transition-timing-function: ease-in-out;
+}
