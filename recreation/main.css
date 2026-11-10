@@ -52,10 +52,10 @@ svg{
 	width:50vw;
 	height: auto;
 	aspect-ratio: 5/3.6;
-	background-image: url('pattern.jpeg');
-	background-size: cover;
-	background-color: #D8FF28;
-	background-blend-mode: multiply; 
+	background-image: url('toro.png');
+	background-size: contain;
+	/*background-color: #D8FF28;
+	background-blend-mode: multiply; */
 }
 
 .circle{
@@ -89,9 +89,9 @@ svg{
 .patternline{
 	width:75%;
 	height: 70%;
-	background-image: url('pattern.jpeg');
-	background-color: #D8FF28;
-	background-blend-mode: multiply; 
+	background-image: url('toro.png');
+	background-size: 50%;
+	background-position: 0px -.2rem;
 }
 @keyframes righttoleft{
 	0%{
@@ -221,9 +221,9 @@ h1:hover{
 .patternline2{
 	width:100vw;
 	height: 1.5rem;
-	background-image: url('pattern.jpeg');
-	background-color: #D8FF28;
-	background-blend-mode: multiply; 
+	background-image: url('toro.png');
+	background-size: 20%;
+	background-position: 0px -.6rem;
 }
 
 
