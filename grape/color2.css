@@ -5,6 +5,10 @@ body{
 	background-attachment:fixed;
 	background-size:cover;
 	overflow:clip;
+	/*cursor:none;*/
+}
+a{
+	/*cursor:none;*/
 }
 .square{
 	width:100px;

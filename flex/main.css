@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+.item-parent2{
+	background-color: palegreen;
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+
+	width: 100%;
+	height: 100vh;
+	
+
+}
+.item-child2{
+	height:200px;
+	width:100vw;
+	background-color: black;
+	color:palegreen;
+	place-content: center;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;
+*/	text-align: center;
+	font-size: 25px;
+	font-family: "Comic Sans MS";
+	flex: 1;
+	transition: all 400ms ease-in-out;
+
+}
+.item-child2:hover{
+	flex: 3;
+	transition: all 400ms ease-in-out;
+
+}
