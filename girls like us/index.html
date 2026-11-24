@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>girls like us home page</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="bg-layers" aria-hidden="true">
+	<div class="bg-layer" id="img-header" style="background-image:url('Scan 2.jpg')"></div>
+	<div class="bg-layer" id="img-intro" style="background-image:url('Scan 3.jpg')"></div>
+	<div class="bg-layer" id="img-1" style="background-image:url('Scan 5.jpg')"></div>
+	<div class="bg-layer" id="img-2" style="background-image:url('Scan 6.jpg')"></div>
+	<div class="bg-layer" id="img-3" style="background-image:url('Scan 7.jpg')"></div>
+	<div class="bg-layer" id="img-4" style="background-image:url('Scan.jpg')"></div>
+</div>
+	<div class="header-container" data-bg="#3A3A3A" data-h1-color="#F291C3" data-img="img-header">
+		<div class="header-girls"><h1>Girls</h1></div>
+		<div class="header-like"><h1>Like</h1></div>
+		<div class="header-us"><h1>Us</h1></div>
+	
+				<section class="title">
+					<div class="title-num"><p>issue fifteen 2026</p></div>
+					<div class="title-name"><p>the vortex</p></div>
+					<div class="mothers"><img src="Mothers & Daughters.svg" alt="logo" 	width="65%" height="auto";>
+
+				</section>
+		</div>
+	
+	<div class="intro" data-bg="#037E6C" data-h1-color="#F291C3" data-img="img-1">
+		<div class="text">
+			<p>THE VORTEX brings together new writing, conversations and visual works from the family and allies of Mothers and Daughters – a lesbian & trans bar*. Who after eight years of operating as a community project for trans and lesbian people in Brussels and around, is wrapping up. This issue serves as a celebration of Mothers & Daughters, an honouring of those who came before and those who joined us, a vessel for some of our thoughts, an outline of our wild vortex and a gathering place for resources for future trans and lesbian organising in Brussels and beyond.</p>
+		</div>
+	</div>
+	<div class="contents" data-bg="#F291C3" data-h1-color="#F291C3">
+	<!-- <div class="contents"> -->
+
+	<section class="screen screen-1" data-bg="#F291C3" data-h1-color="#F291C3" data-img="img-2">
+		<div class="listing">
+			<article class="entry">
+				<h2 class="t-serif">How To Say Goodbye?</h2>
+				<p class="byline">By Staci Bu Shea</p>
+			</article>
+			<article class="entry entry-right">
+				<h2 class="t-wide">At The Threshold</h2>
+				<p class="byline">By Robin Brettar</p>
+			</article>
+			<article class="entry">
+				<h2 class="t-display">How to... bar before?</h2>
+				<p class="byline">By al vers, Jessica Gysel, Katja Mater, Marnie Slater, Ot Lemmens and Pauline Follings</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="screen screen-2" data-bg="#3A3A3A" data-h1-color="#4BA383" data-img="img-3">
+		<div class="listing">
+			<article class="entry entry-right">
+				<h2 class="t-serif">Like an Island <small>(Part I of II)</small></h2>
+				<p class="byline">Marnie Slater and Robin Brettar in conversation with Catherine Bailey Gluckman, Leila Said Bounoua, Ophelie Mac and Olave Nduwanje</p>
+			</article>
+			<article class="entry">
+				<h2 class="t-display">Object with stories</h2>
+				<p class="byline">By Nathalie Wathelet, Eli De Caluwe, Delphine von Kaatz, Jessica Gysel, Joelle Sambi Nzeba, Mia Melvaer, LoupKass, Clair Gilder, Lucy McKenzie, Wolke Vandenberghe, Ot Lemmens and al vers</p>
+			</article>
+			<article class="entry entry-right">
+				<h2 class="t-wide">Dyke * March Speech</h2>
+				<p class="byline">By Claire Gilder</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="screen screen-3" data-bg="#377B6C" data-h1-color="#F291C3" data-img="img-intro">
+		<div class="listing">
+			<article class="entry">
+				<h2 class="t-sans">The Archive is Alive</h2>
+				<p class="byline">Katinka van Gorkum and Pia Louwerens in conversation with Jessica Gysel, LoupKass, Mia Melvaer and Nour Outojane</p>
+			</article>
+			<article class="entry entry-right">
+				<h2 class="t-display">How to... bar?</h2>
+				<p class="byline">By al vers, Jessica Gysel, Katja Mater, Marnie Slater, Ot Lemmens and Pauline Follings</p>
+			</article>
+			<article class="entry">
+				<h2 class="t-serif">Like an Island <small>(Part II of II)</small></h2>
+				<p class="byline">Marnie Slater and Robin Brettar in conversation with Catherine Bailey Gluckman, Leila Said Bounoua, Ophelie Mac and Olave Nduwanje</p>
+			</article>
+			<article class="entry entry-right">
+				<h2 class="t-display">How to... bar together?</h2>
+				<p class="byline">Marnie Slater and Robin Brettar in conversation with Catherine Bailey Gluckman, Leila Said Bounoua, Ophelie Mac and Olave Nduwanje</p>
+			</article>
+		</div>
+	</section>
+	<div class="tankyou" data-bg="#3A3A3A" data-h1-color="#F291C3" data-img="img-4"></div>		
+
+</div>
+
+<script>
+	const root = document.documentElement;
+	const layers = document.querySelectorAll('.bg-layer');
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (!entry.isIntersecting) return;
+			const d = entry.target.dataset;
+
+			root.style.setProperty('--bg', d.bg);
+			root.style.setProperty('--h1-color', d.h1Color);
+
+			layers.forEach((layer) => {
+				layer.classList.toggle('active', layer.id === d.img);
+			});
+
+			document.body.classList.toggle('show-final', d.img === 'img-4');
+		});
+	}, { rootMargin: '-50% 0px -50% 0px' });
+
+	document.querySelectorAll('[data-bg]').forEach((section) => observer.observe(section));
+</script>
+
+</body>
+</html>

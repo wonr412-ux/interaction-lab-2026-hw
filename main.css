@@ -1,0 +1,64 @@
+* {
+	margin:0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: 'title';
+	src: url('FluxischElse-Light.woff') format('woff');
+}
+
+@font-face{
+	font-family: 'text';
+	src: url('FluxischElse-Regular.woff') format('woff');
+}
+
+.container{
+	display:flex;
+	/*padding: 5rem;*/
+
+}
+
+
+.block{
+	display:flex;
+	flex-direction: column;
+	width:50%;
+	height:500vh;
+	background-color:#CEFF8F;
+	
+}
+
+.title{
+	transform: rotateY(-45deg);
+	transform-origin: 0 0;
+	font-family: 'title';
+	font-size:3vw;
+	letter-spacing: -2px;
+	color:black;
+
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	padding-top:1rem;
+	padding-bottom:1rem;
+	width: 200%;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	font-size:5vw;
+	font-family: "text";
+	text-decoration: none;
+	color:black;
+}
+
+.hw{
+	padding-left:2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
